@@ -1,0 +1,23 @@
+{% extends "content-template.html" %}
+
+{% block content %}
+
+      <div class="container-fluid top-buffer">
+      <div class="row">
+        <div class="col-12 top-buffer">
+            <h1>Contact Aviad</h1>
+            <h6 id="hello-title">You can contact me through any of the links on the bottom of the page or through the form below </h6>
+        </div>
+      </div>
+      <form action="{{ url_for('confirm')}}" method="post">
+          <input type="email" name="email" placeholder="Enter email">
+          <input type="text" name="text" placeholder="Message">
+          <button>Submit</button>
+      </form>
+      {% block body %}
+      <h4>{{ message }}</h4>
+      {% endblock %}
+      </div>
+
+{% endblock %}
+

@@ -1,0 +1,57 @@
+div {
+    overflow-wrap: break-word;
+}
+.top-buffer {
+    margin-top: 20px;
+}
+.header{
+    background-image: url('/venv/static/background-pic.jpg');
+    width: 1620px;
+    height: 1080px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;   
+    con
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 3em;
+}
+
+.description h1{
+    color:rgb(233, 228, 225) ;
+    }
+
+.description p{
+color:rgb(255, 255, 255);
+font-size: 20px;
+width: 50%;
+line-height: 1.5;
+}
+
+@media (max-width:500px){
+    img {
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%
+        width: 50%;
+        }
+}
+footer{
+    background-color: whitesmoke;
+    padding: .5rem 1rem .5rem;
+    text-align: center;
+    position: absolute;
+    min-width: 100%;
+    height: 100px;
+}
+.copyright {
+    font-size: 12px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
