@@ -5,7 +5,7 @@ div {
     margin-top: 20px;
 }
 .header{
-    background-image: url('/venv/static/background-pic.jpg');
+    background-image: url(/static/background-pic.jpg);
     width: 1620px;
     height: 1080px;
     background-attachment: fixed;
