@@ -9,10 +9,21 @@
             <h6 id="hello-title">You can contact me through any of the links on the bottom of the page or through the form below </h6>
         </div>
       </div>
-      <form action="{{ url_for('confirm')}}" method="post">
-          <input type="email" name="email" placeholder="Enter email">
-          <input type="text" name="text" placeholder="Message">
-          <button>Submit</button>
+      <form action="{{ url_for('confirmation')}}" method="post">
+          <div class="form-row">
+              <div class="col-sm-12 col-md-9">
+                <label for="formGroupExampleInput2">Message</label>
+                <input type="text" class="form-control" name="message" placeholder="Text">
+              </div>
+          </div>
+           <div class="form-row">
+              <div class="col-sm-9 col-md-4">
+                <label for="myself@organization.com">Email</label>
+                <input type="email" class="form-control" name="email" placeholder="myself@organization.com">
+              </div>
+          </div>
+          <br>
+          <button class="btn btn-primary"> Send </button>
       </form>
       {% block body %}
       <h4>{{ message }}</h4>
